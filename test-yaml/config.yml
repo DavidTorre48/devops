@@ -1,0 +1,6 @@
+---
+version: 1.0
+name: 'Test App'
+settings:
+  debug: true
+  timeout: 30

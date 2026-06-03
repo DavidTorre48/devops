@@ -1,0 +1,23 @@
+---
+name: YAML Linting Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # позволяет запускать вручную
+
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Install yamllint
+      run: pip install yamllint
+    
+    - name: Run yamllint
+      run: yamllint .
