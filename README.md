@@ -6,3 +6,6 @@
 
 Pre-rebase update
 Final documentation update
+## Version 1.1.0
+- New feature A
+- Bug fix B
